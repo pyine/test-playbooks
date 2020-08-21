@@ -1,0 +1,5 @@
+---
+- debug: msg="{{ env }}"
+
+- name: debug step
+  shell: whoami && pwd

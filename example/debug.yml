@@ -1,0 +1,7 @@
+---
+# target ansible version 1.9.2 or later
+- hosts: all
+  become: True
+  gather_facts: false
+  roles:
+    - cls_example-job
