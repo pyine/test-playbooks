@@ -3,4 +3,4 @@
 - hosts: all
   gather_facts: false
   roles:
-    - cls_example-job
+    - {role: cls_example-job, tags: 'init'}
