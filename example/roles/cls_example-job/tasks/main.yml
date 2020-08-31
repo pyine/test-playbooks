@@ -2,4 +2,7 @@
 - debug: msg="{{ env }}"
 
 - name: debug step
-  shell: whoami && pwd
+  shell: df -h
+  register: ps
+  
+- debug: var=ps.stdout_lines
